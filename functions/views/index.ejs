@@ -1,0 +1,71 @@
+<%- include("templates/head", {titulo: 'Home'}) %>
+
+
+      <!--DESCRIPTION-->
+      <section class="descripcion" id="donar">
+        <h1>¡Ayudanos a ayudar!</h1>
+        <h3>
+          Patitas es una plataforma a través de la cual podrés colaborar con las ONGs
+          Patapila y Firulais, entidades dedicadas al cuidado y rescate de animales en
+          situación de abandono.
+        </h3>
+      </section>
+      <!--DESCRIPTION-->
+
+      <!--C A R D S-->
+      <section class="cards">
+         <a href="/firulais" class="cards-ong">
+          <article class="cards-edit">
+            <header>
+              <img
+                src="/img/pruebaPerros.jpg"
+                alt=""
+                class="header-background"
+              />
+              <img src="/img/perfilCards.jpg" alt="" class="img-profile" />
+            </header>
+            <h2 class="titulo">Firulais</h2>
+            <button>DONAR</button>
+          </article>
+        </a>
+        <a href="/patapila" class="cards-ong">
+          <article class="cards-edit">
+            <header>
+              <img
+                src="/img/perroGatoPortada1.jpg"
+                alt=""
+                class="header-background"
+              />
+              <img src="/img/perfilCards.jpg" alt="" class="img-profile" />
+            </header>
+            <h2 class="titulo">Patapila</h2>
+            <button>DONAR</button>
+          </article>
+        </a>
+      </section>
+      <!--C A R D S-->
+
+      <!--FUNCTION-->
+      <section class="comoFunciona" id="comoFunciona">
+        <h2 class="title">¿Cómo funciona patitas?</h2>
+        <div class="up">
+          <img src="/img/Dog.svg" class="imgAnimals" alt="" />
+          <article>
+            <h2>Elegí una ONG</h2>
+            <div>Selecciona la entidad con la que
+              quieras colaborar.
+            </div>
+          </article>
+        </div>
+        <div class="down">
+          <article>
+            <h2>Regalá huesitos</h2>
+            <div>Realiza tu donación en concepto de huesitos y pagá por Mercado Pago
+            </div>
+          </article>
+          <img src="/img/Cat.svg" class="imgAnimals" alt="" />
+        </div>
+      </section>
+    </div>
+    <!--FUNCTION-->
+    <%- include("templates/footer") %>

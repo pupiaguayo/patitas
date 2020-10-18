@@ -1,0 +1,255 @@
+body {
+  list-style: none;
+  font-family: "Overpass", sans-serif;
+  text-align: center;
+  background-color: #e2e2e2;
+  text-decoration: none;
+}
+
+/*H E A D E R S T Y L E S*/
+.header-nav {
+  display: flex;
+  margin: 1.25em;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.Logo {
+  height: 3.125em;
+  width: 3.125em;
+}
+.header-nav div {
+  display: flex;
+  align-items: flex-end;
+}
+.header-nav div span {
+  font-size: 1.125em;
+  margin-left: 0.625em;
+  letter-spacing: 0.125em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.header-nav .button-menu {
+  color: #212529;
+  font-size: 1.5625em;
+  display: none;
+}
+.navbar ul {
+  list-style: none;
+}
+.navbar ul li a {
+  padding: 0.625em;
+  margin-right: 1.25em;
+  color: #212529;
+}
+/*D E S C R I P C I O N S T Y L E S*/
+.descripcion {
+  margin: 1.875em auto;
+}
+.descripcion h1 {
+  font-weight: bold;
+  font-size: 3.125em;
+  color: #ac4b1c;
+}
+.descripcion h3 {
+  margin-top: 1.25rem;
+  font-weight: normal;
+  font-size: 1.25em;
+}
+
+/*C A R D S S T Y L E S*/
+.cards {
+  margin: 3.75em 11.25em;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.cards .cards-ong {
+  text-decoration: none;
+}
+.cards-edit {
+  border: 0.0625em solid #ac4b1c;
+  height: 20em;
+  width: 15.625em;
+  border-radius: 10px;
+}
+.cards-edit:hover {
+  box-shadow: 1px 1px 5px rgb(97, 97, 97);
+}
+.cards-edit .header-cards {
+  height: 6.25em;
+  width: 15.625em;
+}
+.cards-edit button {
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: #d38b43;
+  height: 2.5em;
+  width: 6.25em;
+  color: white;
+  box-shadow: 1px 1px 5px rgb(97, 97, 97);
+  outline: none;
+  border: none;
+}
+.cards-edit button:hover {
+  background-color: #ac4b1c;
+  box-shadow: 1px 1px 5px rgb(44, 44, 44);
+}
+.cards-edit .header-background {
+  height: 6.25em;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+  color: transparent;
+}
+.cards-edit .img-profile {
+  height: 4.375em;
+  width: 4.375em;
+  border-radius: 100%;
+  margin-top: -10px;
+  box-shadow: 1px 1px 5px rgb(44, 44, 44);
+}
+.cards-edit .titulo {
+  margin: 0.9375em auto;
+  font-size: 2em;
+  color: #d38b43;
+  text-transform: uppercase;
+}
+.cards-edit .titulo:hover {
+  color: #ac4b1c;
+}
+/*H O W TO F U N C T I O N S T Y L E S*/
+.comoFunciona {
+  max-width: 56.25em;
+  margin: 6.25em auto 0 auto;
+}
+.comoFunciona h2 {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+.comoFunciona .title {
+  color: #ac4b1c;
+}
+.comoFunciona .up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comoFunciona .down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comoFunciona article {
+  padding: 3em;
+}
+.comoFunciona .imgAnimals {
+  width: 18.75em;
+  height: 18.75em;
+}
+
+/*F O O T E R S T Y L E S*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.625em 1.25em;
+  color: #ac4b1c;
+}
+
+footer a {
+  padding: 0.3125em;
+  margin-right: 0.3125em;
+  color: #ac4b1c;
+}
+
+/*MEDIA QUERIES 995PX*/
+@media (max-width: 995px) {
+  body {
+    font-size: 14px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .cards .cards-ong {
+    margin: 10px auto;
+  }
+  .cards-edit {
+    height: 290px;
+    width: 320px;
+    border-radius: 10px;
+  }
+  .cards-edit .header-background {
+    height: 100px;
+  }
+}
+/*MEDIA QUERIES 767PX*/
+@media (max-width: 767.98px) {
+  body {
+    font-size: 12px;
+  }
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .header-nav nav {
+    width: 100%;
+    justify-content: center;
+  }
+  .header-nav .button-menu {
+    display: block;
+  }
+  .header-nav nav ul {
+    display: none;
+  }
+  .header-nav nav ul li {
+    display: flex;
+    flex-direction: column;
+  }
+  .cards {
+    margin: 0px auto;
+    border-radius: 10px;
+  }
+
+  .comoFunciona .imgAnimals {
+    width: 200px;
+    height: 200px;
+  }
+}
+/*MEDIA QUERIES 575PX*/
+@media (max-width: 575.98px) {
+  body {
+    font-size: 10px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .cards-edit {
+    height: 220px;
+    width: 280px;
+    border-radius: 10px;
+  }
+  .cards-edit .header-background {
+    height: 80px;
+  }
+  .comoFunciona .imgAnimals {
+    width: 150px;
+    height: 150px;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 10px 5px 10px;
+    color: #ac4b1c;
+  }
+  footer a {
+    padding: 1px;
+    margin-right: 5px;
+  }
+}

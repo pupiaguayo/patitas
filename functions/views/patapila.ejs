@@ -1,0 +1,61 @@
+<%- include("templates/head", {titulo: 'Patapila'}) %>
+      <!--C A R D S-->                             
+<header class="headerPages">
+  <img src="/img/perroGatoPortada1.jpg" alt="" class="headerImg">
+<img src="/img/perfilCards.jpg" alt="" class="perfilImg"> 
+<h1 class="title-pages">Patapila</h1>
+</header>
+
+<div class="descripcionOng">
+  <div class="conocenos">
+    <h2 class="subtitle">¡Conocenos!</h2>
+    <p>Hola! Somos patapila una ONG, fundada en el año 2020 en El Colorado-Formosa 
+      nos dedicamos al cuidado y rescate de animales que fueron abandonados, somos una
+      organizacion sin fines de lucro por lo que tu ayuda es muy importante para que 
+      sigamos trabajando 
+    </p>
+    <section>
+      <a href="https://www.instagram.com/firulais_el_colorado/"><i class="fab fa-instagram fa-lg"></i> </a>
+      <a href="https://www.facebook.com/groups/716683692214578"><i class="fab fa-facebook-f fa-lg"></i></a>
+    </section>
+  </div>
+  <div class="donacion">
+    <h2 class="subtitle">Ayudanos a seguir!</h2>
+    <p>Con los huesitos que nos regales 
+      podremos seguir trabajando
+      y ayudando a los que no tienen voz 
+    </p>
+    <section class="buttons">
+      <a href="#openModal-about"><button>regalame un huesito</button>
+        </a>
+        <div id="openModal-about" class="modalDialog">
+          <div>
+             <a href="#close" title="Close" class="close">X</a>
+             <h1>Elegi la cantidad</h1>
+             <h2>1 x <img src="/img/huesito.svg" alt="Huesito" class="Hueso" /></h2>
+             <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+data-preference-id="280772722-939459a5-5337-4f61-9949-45ff7328d10f"
+data-button-label="Regalar 1 huesito ($50)">
+</script>
+<h2>3 x <img src="/img/huesito.svg" alt="Huesito" class="Hueso" /></h2>
+<script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+data-preference-id="280772722-939459a5-5337-4f61-9949-45ff7328d10f"
+data-button-label="Regalar 3 huesitos ($150)">
+</script>
+<h2>5 x <img src="/img/huesito.svg" alt="Huesito" class="Hueso" /> </h2>
+<script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+data-preference-id="280772722-939459a5-5337-4f61-9949-45ff7328d10f"
+data-button-label="Regalar 5 huesitos ($250)">
+</script>
+<h2>10 x <img src="/img/huesito.svg" alt="Huesito" class="Hueso" /></h2>
+<script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+data-preference-id="280772722-939459a5-5337-4f61-9949-45ff7328d10f"
+data-button-label="Regalar 10 huesitos ($500)">
+</script>
+           </div>
+       </div>
+</section>
+  </div>
+</div>
+      <!--C A R D S-->
+<%- include("templates/footer") %>
